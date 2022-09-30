@@ -12,6 +12,13 @@ next: string;
 })
 export class CharacterListComponent implements OnInit {
 characters:Character[]=[];
+characters2:Character[]=[];
+characters3:Character={
+  title: '',
+  director: '',
+  episode_id: 0,
+  release_date: ''
+};
 private query:string='films';
 private pageNum=1;
 
@@ -30,6 +37,10 @@ this.character_service.buscar()
   take(1)
 ).subscribe((res:any)=>{
   this.characters=res;
-});
 }
+);
+
+
+}
+
 }

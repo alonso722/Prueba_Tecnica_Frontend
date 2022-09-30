@@ -7,14 +7,14 @@
         <p>{{character.episode_id}}</p>
         <p>{{character.release_date}}</p>
         <div class="image">
-            <a [routerLink]="['/character.details',character]">Link</a>
+            <mat-card-actions>
+                <button mat-flat-button color="primary" [routerLink]="['/character.details',character]">Mostrar</button>
+              </mat-card-actions>
 
         </div>
       </mat-card-content>
       <!--
-              <mat-card-actions>
-        <button mat-flat-button color="primary">Mostrar</button>
-      </mat-card-actions>
+              
       -->
       </mat-card> 
     </section>
